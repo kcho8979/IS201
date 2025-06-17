@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Résumé – Kiyong Cho</title>
+
+  <!-- Bootstrap core -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Your global + layout css -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/layoutstyles.css">
+</head>
+<body>
+  <!-- NAVBAR (same across site) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">Kiyong Cho</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="resume.html">Résumé</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutme.html">About&nbsp;Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="scratch.html">Scratch</a></li>
+          <li class="nav-item"><a class="nav-link" href="app.html">Web&nbsp;App</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="bg-light py-5 border-bottom">
+    <div class="container text-center">
+      <img src="images/profile.jpg" alt="Headshot of Kiyong Cho" width="140" class="rounded-circle shadow mb-3">
+      <h1 class="fw-bold">Kiyong Cho</h1>
+      <p class="lead mb-1">Aspiring CPA • Finance &amp; Data Analytics Enthusiast</p>
+      <p class="small">
+        <i class="bi bi-geo-alt"></i> Provo, UT &nbsp;|&nbsp;
+        <i class="bi bi-envelope"></i> <a href="mailto:kcho8979@byu.edu">kcho8979@byu.edu</a> &nbsp;|&nbsp;
+        <i class="bi bi-telephone"></i> (385)&nbsp;510-6150
+      </p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container my-5">
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="mb-5">
+      <h2 class="h4 border-bottom pb-2"><i class="bi bi-mortarboard-fill text-primary"></i> Education</h2>
+      <div class="card border-0 mb-3">
+        <div class="card-body">
+          <h5 class="card-title mb-0">Brigham Young University – Marriott School of Business</h5>
+          <p class="text-muted mb-1">B.S. Pre-Business (Intended Accounting) &nbsp;·&nbsp; Apr 2027</p>
+          <p class="mb-1">GPA <span class="fw-semibold">3.94 / 4.00</span></p>
+          <ul class="small mb-0">
+            <li>Clubs: Finance Society, Investment Banking Association</li>
+            <li>Key Coursework: Accounting 201, Econ 110, Stats 121, Calculus 112</li>
+            <li>Projects:
+              <ul>
+                <li>Discounted-cash-flow valuation of AMD.</li>
+                <li>Linear-regression model (R) predicting CPI using FRED PCE data.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="mb-5">
+      <h2 class="h4 border-bottom pb-2"><i class="bi bi-briefcase-fill text-primary"></i> Experience</h2>
+
+      <!-- Job 1 -->
+      <article class="mb-4">
+        <h5 class="fw-semibold mb-0">Portfolio Manager / Research Analyst</h5>
+        <p class="text-muted">JammyBox Inc · Provo, UT &nbsp;|&nbsp; Jul 2024 – Jan 2025</p>
+        <ul class="small">
+          <li>Managed high-growth equity portfolio, producing <strong>+12 % ROI</strong> in six months.</li>
+          <li>Developed valuation models that lifted decision accuracy by 15 %.</li>
+          <li>Aligned investment policy with firm’s risk tolerance and long-term goals.</li>
+        </ul>
+      </article>
+
+      <!-- Job 2 -->
+      <article class="mb-4">
+        <h5 class="fw-semibold mb-0">Team Leader</h5>
+        <p class="text-muted">Republic of Korea Army · Seoul, South Korea &nbsp;|&nbsp; Oct 2022 – Apr 2024</p>
+        <ul class="small">
+          <li>Directed 10-member artillery crew achieving 100 % mission readiness.</li>
+          <li>Implemented safety protocols that resulted in <em>zero</em> incidents.</li>
+          <li>Mentored soldiers in technical gunnery &amp; leadership development.</li>
+        </ul>
+      </article>
+
+      <!-- Job 3 -->
+      <article>
+        <h5 class="fw-semibold mb-0">Financial Manager</h5>
+        <p class="text-muted">Gwangju Ceramic Center · Gwangju, South Korea &nbsp;|&nbsp; Mar 2020 – Dec 2020</p>
+        <ul class="small">
+          <li>Reduced labor cost 15 % and cut excess inventory 10 % through data analysis.</li>
+          <li>Enhanced budgeting processes, improving forecast accuracy by 20 %.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ===== VOLUNTEER ===== -->
+    <section id="volunteer" class="mb-5">
+      <h2 class="h4 border-bottom pb-2"><i class="bi bi-people-fill text-primary"></i> Leadership &amp; Volunteer</h2>
+      <ul class="small">
+        <li><strong>CFO</strong>, BYU-Idaho Brazilian Jiu-Jitsu Club (2021 – 2022)</li>
+        <li><strong>Trainer</strong>, Leaders Gym, Gwangju (2019) — designed workout plans for eight clients.</li>
+      </ul>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="mb-3">
+      <h2 class="h4 border-bottom pb-2"><i class="bi bi-lightning-charge-fill text-primary"></i> Skills &amp; Interests</h2>
+      <div class="row small">
+        <div class="col-md-6">
+          <p class="mb-1"><strong>Languages:</strong> Korean (native), English (fluent)</p>
+          <p class="mb-1"><strong>Technical:</strong> Python, SQL, R, Excel VBA, Machine Learning</p>
+          <p class="mb-1"><strong>Certifications:</strong> CFA Level II Candidate, Bloomberg Market Concepts</p>
+        </div>
+        <div class="col-md-6">
+          <p class="mb-1"><strong>Markets:</strong> Equity &amp; commodity futures trading</p>
+          <p class="mb-1"><strong>Interests:</strong> Basketball, Bodybuilding, Data-viz‬</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back-to-top anchor -->
+    <div class="text-end mb-5">
+      <a href="#top" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-up"></i> Back to Top</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center small">
+      <ul class="list-inline mb-2">
+        <li class="list-inline-item"><a class="text-white text-decoration-none" href="https://github.com/YOUR"><i class="bi bi-github"></i></a></li>
+        <li class="list-inline-item"><a class="text-white text-decoration-none" href="https://linkedin.com/in/YOUR"><i class="bi bi-linkedin"></i></a></li>
+        <li class="list-inline-item"><a class="text-white text-decoration-none" href="mailto:kcho8979@byu.edu"><i class="bi bi-envelope-fill"></i></a></li>
+      </ul>
+      &copy; 2025 Kiyong Cho
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

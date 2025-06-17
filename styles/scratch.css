@@ -1,0 +1,63 @@
+/* ===== GLOBAL ===== */
+body{
+  margin:0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background:#fef9f5;               /* custom bg color */
+  color:#333;
+  line-height:1.6;
+}
+a{color:#0366d6;text-decoration:none;}
+a:hover{color:#023e8a;text-decoration:underline;}
+img{max-width:100%;height:auto;border-radius:6px;}
+
+/* ===== HEADER ===== */
+.header-box{
+  background:#ffcb05 url("../images/donut_pattern.png") repeat;
+  color:#000;
+  text-align:center;
+  padding:2rem 1rem;
+}
+.header-box nav a{margin:0 .5rem;font-weight:600;}
+.small{font-size:.875rem}
+
+/* ===== LIST SECTION ===== */
+.list-box{
+  padding:2rem 1rem;
+}
+.list-box ol{padding-left:1.2rem;}
+.list-box ul{list-style:circle;padding-left:1.1rem;}
+.list-box li{margin:.4rem 0;}
+.list-box img{margin-top:1rem;}
+
+/* ===== VIDEO ===== */
+.video-box{
+  background:#fff7e6;
+  padding:2rem 1rem;
+}
+.video-wrapper{
+  position:relative;
+  padding-bottom:56.25%; /* 16:9 */
+  height:0;
+}
+.video-wrapper iframe{
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  border:0;
+}
+
+/* ===== TABLEAU ===== */
+.viz-box{
+  padding:2rem 1rem;
+}
+.tableauPlaceholder,
+.tableauVizObject{
+  width:100%; min-height:600px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:1rem 0;
+  background:#333;
+  color:#fff;
+}
+footer a{color:#ffd60a;}

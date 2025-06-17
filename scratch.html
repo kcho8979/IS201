@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scratch Page – Kiyong Cho</title>
+
+  <!-- ❗ NO Bootstrap here (blank file requirement) -->
+  <link rel="stylesheet" href="styles/scratch.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    .header-box {
+      background-color: #007bff;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav a {
+      color: #ffc107;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .list-box, .video-box, .viz-box {
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 800px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .list-box img {
+      width: 100%;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #343a40;
+      color: white;
+    }
+    .tiny { font-size: 0.8em; }
+    .small { text-align: center; font-size: 0.9rem; }
+  </style>
+</head>
+<body id="top">
+
+  <div class="header-box">
+    <h1>🍩 Donut Economics &amp; Fun Stuff</h1>
+    <p>My scratch playground: testing raw&nbsp;HTML + CSS + embeds.</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="resume.html">Résumé</a> |
+      <a href="app.html">Web&nbsp;App</a>
+    </nav>
+  </div>
+
+  <p class="small">
+    Jump to:
+    <a href="#lists">Nested List</a> •
+    <a href="#video">YouTube</a> •
+    <a href="#viz">Tableau Viz</a>
+  </p>
+
+  <div id="lists" class="list-box">
+    <h2>Top 3 Donut Flavors <span class="tiny">(and toppings)</span></h2>
+    <ol>
+      <li>Chocolate Glazed
+        <ul>
+          <li>Crushed almonds</li>
+          <li>Sea-salt drizzle</li>
+        </ul>
+      </li>
+      <li>Boston Cream
+        <ul>
+          <li>Vanilla custard</li>
+          <li>Dark-choco ganache</li>
+        </ul>
+      </li>
+      <li>Matcha Old-Fashioned
+        <ul>
+          <li>Powdered sugar</li>
+          <li>White-choco chips</li>
+        </ul>
+      </li>
+    </ol>
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Stack of colorful donuts" />
+  </div>
+
+  <div id="video" class="video-box">
+    <h2>How Donuts Are Made (YouTube)</h2>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/SngP9GvWp54" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="viz" class="viz-box">
+    <h2>Interactive Tableau: Coffee Chain Sales</h2>
+    <div class="tableauPlaceholder" id="tableauViz">
+      <iframe src="https://public.tableau.com/views/RegionalSampleWorkbook/Storms?:embed=y&:display_count=yes&:showVizHome=no" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <a href="#top">↑ Back to Top</a><br />
+    &copy; 2025 Kiyong Cho
+  </footer>
+
+  <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+</body>
+</html>

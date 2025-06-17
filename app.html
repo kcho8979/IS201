@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Random Joke Generator</title>
+
+<style>
+  :root{
+    --primary:#0d6efd;--bg:#f8f9fa;
+  }
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);display:flex;flex-direction:column;min-height:100vh}
+  h1{text-align:center;margin:2rem 0;color:var(--primary)}
+  .card{
+    max-width:500px;margin:auto;padding:2rem;background:#fff;border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);text-align:center
+  }
+  button{
+    margin-top:1.2rem;padding:.6rem 1.2rem;border:0;border-radius:4px;
+    font-size:1rem;font-weight:600;background:var(--primary);color:#fff;cursor:pointer
+  }
+  button:hover{background:#084298}
+  footer{margin-top:auto;text-align:center;padding:1rem;font-size:.85rem}
+  footer a{color:var(--primary);text-decoration:none}
+</style>
+</head>
+<body>
+<h1>😂 Joke Generator</h1>
+
+<div class="card">
+  <p id="joke">Press the button to get a joke!</p>
+  <button id="newJokeBtn">New Joke</button>
+</div>
+
+<footer><a href="scratch.html">← Back to Scratch Page</a></footer>
+
+<script>
+// ----- Joke list (원하면 더 추가) -----
+const jokes = [
+  "Why don't scientists trust atoms? Because they make up everything!",
+  "I told my computer I needed a break, and now it won’t stop sending me KitKat ads.",
+  "Why did the scarecrow win an award? He was outstanding in his field!",
+  "I’m reading a book about anti-gravity. It’s impossible to put down.",
+  "What do you call fake spaghetti? An impasta!",
+  "Did you hear about the circus fire? It was in tents!",
+  "How do you catch a squirrel? Climb a tree and act like a nut!",
+  "Did you hear about the guy who invented Lifesavers? They say he made a mint!",
+  "I told my wife she should embrace her mistakes. She gave me a hug.",
+  "Why don't eggs tell jokes? They might crack up!",
+  "What did the big flower say to the little flower? Hi, bud!",
+  "I went to buy some camouflage pants, but I couldn't find any.",
+  "What did the grape say when it got stepped on? Nothing, it just let out a little wine.",
+  "I used to have a job at a calendar factory, but I got fired because I took a couple of days off.",
+  "What do you call a snowman with a six-pack? An abdominal snowman!",
+  "Why don't skeletons fight each other? They don't have the guts!",
+  "Did you hear about the restaurant on the moon? Great food, no atmosphere!",
+  "What did one wall say to the other wall? I'll meet you at the corner!",
+  "Why did the math book look sad? Because it had too many problems!",
+  "What did one hat say to the other hat? You stay here, I'll go on ahead!",
+  "Why did the coffee file a police report? It got mugged!"
+];
+
+// ----- DOM -----
+const jokeP = document.getElementById('joke');
+document.getElementById('newJokeBtn').addEventListener('click',showJoke);
+
+// ----- Functions -----
+function showJoke(){
+  const random = Math.floor(Math.random()*jokes.length);
+  jokeP.textContent = jokes[random];
+}
+</script>
+</body>
+</html>

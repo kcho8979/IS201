@@ -1,0 +1,20 @@
+/* styles.css : 사이트 공통 테마 */
+:root{
+  --bs-primary:#0d6efd;  /* 부트스트랩 기본 primary 색 */
+  --accent:#20c997;      /* teal 녹색 */
+}
+
+body{
+  font-family:"Helvetica Neue",Arial,sans-serif;
+  letter-spacing:.1px;
+}
+
+/* 링크 색상 통일 */
+a{color:var(--accent);text-decoration:none}
+a:hover{color:#0a6f55;text-decoration:underline}
+
+/* 헤딩 공통 */
+h1,h2,h3,h4{font-weight:600;letter-spacing:.3px}
+
+/* 작은 helper 클래스 */
+.tiny{font-size:.75rem;color:#6c757d}
